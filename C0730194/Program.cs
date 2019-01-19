@@ -16,6 +16,20 @@ namespace C0730194
             StudentInformation Steve = new StudentInformation("Steve", 3.3, 18);
             StudentInformation Cindy = new StudentInformation("Cindy", 2.3, 12);
 
+
+            var StudentList = new List<StudentInformation>();
+
+            StudentList.Add(Mary);
+            StudentList.Add(John);
+            StudentList.Add(Mark);
+            StudentList.Add(Steve);
+            StudentList.Add(Cindy);
+
+            foreach (var Student in StudentList)
+            {
+                Console.WriteLine(Student.Name);
+            }
+            Console.ReadLine();
         }
 
     }
@@ -34,5 +48,12 @@ namespace C0730194
             Attn =aAttn;
          }
               
+    }
+
+    class StudentList
+    {
+        public void CICS()
+        {
+        }
     }
 }
